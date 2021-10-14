@@ -22,8 +22,7 @@ public class Martingale {
             1. The goal of € 1200 is reached.
             2. There is not enough money left to bet again. */
 
-        int money = 1000;  ;
-
+        int money = 1000;
         int target = 1200;
         int bet = 10;
             while (money >= bet) {
@@ -49,7 +48,7 @@ public class Martingale {
             }
 
     public static void main(String[] args) {
-	// write your code here
+
         System.out.println("\nLet's calculate the odds to win money by playing a coin flipping betting game using the Martingale betting system. " +
                 "\nThe initial balance is 1000, the initial betting amount is 10 and the desired stopping amount is 1200." +
                 "\n" +
