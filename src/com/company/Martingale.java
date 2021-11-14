@@ -59,17 +59,16 @@ public class Martingale {
                 "\nThe game ends when the desired amount of 1200 is obtained, or if you have lost all your money.");
         Scanner scanner = new Scanner(System.in);  // Create a Scanner object
         System.out.println("How many times would you like the program to run for statistics? I suggest a minimum of 10000 times.");
-        String amountOfTries = scanner.nextLine();  // Read user input
-        int tries = Integer.valueOf(amountOfTries);
+        int amountOfTries = scanner.nextInt();  // Read user input
 
         double numberOfWins = 0; //Count how many times we achieve our goal of €1200.
-        for(int i = 1; i<=tries; i++) {
+        for(int i = 1; i<=amountOfTries; i++) {
             martingale();
             if(martingale() == 1200){
                 numberOfWins++;//increases numberOfWins each time our goal of €1200 is achieved.
             }
         } //Calculate our chances to achieve all or nothing!
-        System.out.println("There is a chance of " + numberOfWins/tries*100 + " % to reach the goal of € 1200.");
+        System.out.println("There is a chance of " + numberOfWins/amountOfTries*100 + " % to reach the goal of € 1200.");
     }
 }
 
