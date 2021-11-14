@@ -36,7 +36,7 @@ public class Martingale {
                     money -= bet;
                     bet *= 2;
 
-                    if(money <= bet){
+                    if (money <= bet){
                         bet = 10;
                     }
                 }
